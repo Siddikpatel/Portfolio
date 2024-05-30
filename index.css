@@ -342,4 +342,8 @@ a:hover:not(nav a) {
         height: 100px;
     }
 
+    body {
+        background: url("media/fade_small.jpg");
+    }
+
 }
