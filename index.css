@@ -23,6 +23,7 @@ body {
     background-position: center;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 nav {
@@ -329,6 +330,10 @@ a:hover:not(nav a) {
     font-weight: 500;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 @media(max-width: 800px) {
     .hideonmobile {
         display: none;
@@ -344,7 +349,7 @@ a:hover:not(nav a) {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .static-txt, .dynamic-txt {

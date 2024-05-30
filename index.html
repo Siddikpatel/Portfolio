@@ -122,10 +122,12 @@
 
         function showSidebar() {
             sidebar.style.display = "flex";
+            document.body.style.overflowY = "hidden";
         }
 
         function hideSidebar() {
             sidebar.style.display = "none";
+            document.body.style.overflowY = "scroll";
         }
 
     </script>
