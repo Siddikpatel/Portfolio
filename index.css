@@ -191,6 +191,7 @@ h1 {
     border: 1px solid var(--secondary);
     padding: 1rem;
     margin: 3rem 3.5rem;
+    width: auto;
     /* width: fit-content;
     height: 80vh; */
     display: flow-root;
@@ -291,11 +292,11 @@ a:hover:not(nav a) {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 40px;
     }
 
     .static-txt, .dynamic-txt {
-        font-size: 10.5px;
+        font-size: 20px;
     }
 
     .title {
@@ -307,7 +308,7 @@ a:hover:not(nav a) {
     }
 
     .img-block {
-        width: 200px;
+        width: 150px;
     }
 
     .left {
@@ -316,5 +317,9 @@ a:hover:not(nav a) {
 
     .intro-sec {
         padding: 13px 13px;
+    }
+
+    body {
+        background-size: contain;
     }
 }
