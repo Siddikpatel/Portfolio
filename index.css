@@ -34,8 +34,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 700;
     border-bottom: 0.1px solid rgb(231, 237, 241);
-    box-shadow: 0 4px 35px 25px rgba(137, 204, 204, 0.6) inset;
-
+    box-shadow: 0 4px 35px 25px rgba(162, 222, 222, 0.6) inset;
     /* box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.1) inset; */
     width: 100vw;
     background-color: transparent; 
@@ -349,7 +348,7 @@ a:hover:not(nav a) {
     }
 
     h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .static-txt, .dynamic-txt {
