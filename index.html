@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <title>Sid P</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="nav unselectable">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="/media/Resume.pdf" download="Siddik-Patel-Resume">Resume</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#connect">Connect With Me</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper unselectable">
+        <div class="animate">
+            <h1 class="static-intro">Hi, I am <span>Siddik Patel</span></h1>
+            <p class="static-txt">I am an aspiring software developer with excellent knowledge of <span id="auto-type"></span></p>
+        </div>
+    </div>
+
+    <div class="title unselectable" id="projects">
+        Projects
+    </div>
+    <div class="project-box">
+        <div class="container">
+            <img src="/media/left-arrow.png" draggable="false" class="arrow left">
+
+            <div class="frame">
+                <div class="slider">
+
+                    <a href="https://github.com/Siddikpatel/Library" target="_blank">
+                        <img src="/media/library.png" draggable="false" alt="image" class="s-img">
+                    </a>
+                    <a href="https://github.com/Siddikpatel/MedTime" target="_blank">
+                        <img src="/media/medtime.png" draggable="false" alt="image" class="s-img">
+                    </a>
+                    <a href="https://github.com/Siddikpatel/Employee-Management-System">
+                        <img src="/media/employee_mgmt.png" draggable="false" alt="image" class="s-img">
+                    </a>
+                    <!-- <a href="">
+                        <img src="/media/ss.png" draggable="false" alt="image" class="s-img">
+                    </a> -->
+
+                </div>
+            </div>
+
+            <img src="/media/right-arrow.png" draggable="false" class="arrow right">
+        </div>
+    </div>
+
+    <div class="title unselectable" id="about">
+        <span style="margin-top: 2rem;">About Me</span> 
+    </div>
+
+    <section class="intro-sec unselectable">
+        <img src="/media/sid.jpg" class="img-block left" alt="my pic"/>
+        <p>My journey to the world of computers began when I was gifted with a laptop at the age of 15. It felt amazing to install games, antiviruses and root samsung galaxy S4 🫢 !! </p>
+        <p>Since then, I was hooked with computers and always tried new stuff with them. Eventually I decided to pursue a degree in Computer Science. I always thought of building cool softwares and working on cool projects so I started learning programming languages (C & Java) and data structures so I could start solving the easy problems.</p>
+        <p>Let me tell you though, it was my time to shine whenever we had to submit a project as an assignment! I developed a database focused web application for Hostel Management, an android application that reminds you to take meds on time and a computer graphics project using graphics library. Apart from that, I used to solve leetcode problems too whenever I could, thinking I wouldn't want to miss my chance to join a big organizations.</p>
+        <p>I also took part in various online coding competitions, and recently I have started contribuitng to open-source codes too. As of now, I familiarized myself with Spring boot framework and developed a RESTful web application using React.js framework! (Thanks, <a href="https://www.youtube.com/@takeUforward" target="_blank">Take U Forward</a>, <a href="https://www.linkedin.com/in/timbuchalka/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au" target="_blank">Tim Buchalka</a>, and all the other youtubers, for the amazing content!) </p>
+        <p>These days I am focusing on front-end technologies (CSS & React.js) so that I can become a full stack developer (and also trying to become pro at monopoly to be honest cause till now I have always lost)</p>
+    </section>
+
+    <div class="title unselectable" id="connect">
+        Connect
+    </div>
+    <div class="contact-card">
+        <div class="mini-links">
+
+        </div>
+        <div class="ca-main">
+            <div class="ca-main-item dotted-circle">
+                <a href="mailto:patel.siddik369@gmail.com" target="_blank"><img src="/media/mail.png" class="ca-img"></a>
+            </div>
+            <div class="ca-main-item dotted-circle">
+                <a href="https://www.linkedin.com/in/siddik-patel-24306721b/" target="_blank"><img src="/media/linkedin.png" class="ca-img"></a>
+            </div>
+            <div class="ca-main-item dotted-circle">
+                <a href="https://www.instagram.com/siddiqpatel_/" target="_blank"><img src="/media/instagram.png" class="ca-img"></a>
+            </div>
+            <div class="ca-main-item dotted-circle">
+                <a href="https://www.facebook.com/siddik.patel.7921" target="_blank"><img src="/media/facebook.png" class="ca-img"></a>
+            </div>
+            <div class="ca-main-item dotted-circle">
+                <a href="https://github.com/Siddikpatel" target="_blank"><img src="/media/github.png" class="ca-img"></a>
+            </div>
+            <div class="ca-main-item dotted-circle">
+                <a href="https://leetcode.com/u/siddiqpatel12/" target="_blank"><img src="/media/icons8-level-up-your-coding-skills-and-quickly-land-a-job-96.png" class="ca-img"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="credits">
+
+        <a href="https://www.freepik.com/free-vector/abstract-background-with-squares_15276013.htm" target="_blank">Image by Freepik</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/code" title="code icons" target="_blank">Code icons created by Freepik - Flaticon</a>
+
+    </div>
+   
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#auto-type", {
+            strings: ["Java", "Spring Boot", "SQL/MySQL", "TypeScript", "Data Structures"],
+            typeSpeed: 100,
+            backSpeed: 120,
+            loop: true
+        })
+    </script>
+
+</body>
+</html>

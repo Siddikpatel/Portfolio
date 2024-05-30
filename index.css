@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root {
+    --primary: #00a6a6;
+    --secondary: #ffd700;
+    --primary-light: #d6ffff;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    /* background-color: whitesmoke;  */
+    background: url('/media/fade.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 0.1px solid rgb(231, 237, 241);
+    box-shadow: 0 2px 50px 0 rgba(0,0,0,.1);
+}
+
+.nav li {
+    display: inline-block;
+    margin-inline: 1rem;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+}
+
+.nav li a, .animate span {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: var(--secondary);
+    text-decoration-thickness: 3px;
+}
+
+.nav li a:hover {
+    color: var(--primary);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3.4rem);
+}
+
+.animate {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.animate span {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.static-txt, .dynamic-txt {
+    font-size: 2.1rem;
+}
+
+.title {
+    margin: 0 auto;
+    width: 29rem;
+    height: 4rem;
+    text-align: center;
+    border: 3px solid var(--primary);
+    border-radius: 10rem;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.project-box .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.arrow {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;   
+}
+
+.frame {
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+    display: flex;
+    transition: all 0.7s ease;
+}
+
+.s-img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.s-img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.intro-sec {
+    background-color: var(--primary-light);
+    border: 1px solid var(--secondary);
+    padding: 1rem;
+    margin: 3rem 3.5rem;
+    /* width: fit-content;
+    height: 80vh; */
+    display: flow-root;
+}
+
+.intro-sec .img-block {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.left {
+    float: left;
+    margin-right: 2rem;
+}
+
+.intro-sec .img-block~p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.intro-sec a, .credits a {
+    text-underline-offset: 4px;
+    color: var(--primary);
+    font-style: italic;
+}
+
+a:hover:not(.nav a) {
+    text-shadow: 2px 2px rgba(0,0,0,0.1);
+}
+
+.contact-card {
+    margin: 3rem 3.5rem 0;
+    height: fit-content;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    /* border: 2px solid #d6ffff;
+    background-color: rgb(251, 244, 201);
+    color: #00a6a6; */
+}
+
+.ca-main {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-weight: 500;
+    /* margin-top: auto; */
+    flex-wrap: wrap;
+}
+
+.ca-main-item {
+    display: flex;
+    margin: 1rem 3rem;
+}
+
+.dotted-circle {
+    border: 4px dotted var(--primary);
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ca-main-item:nth-child(even) {
+    border: 4px dotted var(--secondary);
+}
+
+.ca-img {
+    width: 100px;
+    height: 100px;
+}
+
+.credits {
+    height: max-content;
+    line-height: 28px;
+    text-align: center;
+    padding: 0.2rem 0;
+    background-color: var(--primary-light);
+    box-shadow: 0 2px 30px #9cffff; 
+    font-weight: 500;
+}
