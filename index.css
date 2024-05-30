@@ -316,7 +316,7 @@ a:hover:not(nav a) {
     }
 
     .clear {
-        clear: both;
+        clear: right;
     }
 
     .project-box .container {
