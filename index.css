@@ -328,4 +328,18 @@ a:hover:not(nav a) {
         height: 40px;
     }
 
+    .ca-main-item {
+        margin: 5px 5px;
+    }
+
+    .ca-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dotted-circle {
+        width: 100px;
+        height: 100px;
+    }
+
 }
