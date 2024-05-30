@@ -68,6 +68,7 @@ nav li a:hover {
     justify-content: flex-start;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    transform: translate3d(0, 0, 0);
 }
 
 .sidebar li {
