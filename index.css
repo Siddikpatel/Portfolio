@@ -192,12 +192,14 @@ h1 {
     padding: 1rem;
     margin: 3rem auto;
     width: 80%;
+    height: fit-content;
     /* width: fit-content;
     height: 80vh; */
     display: flow-root;
 }
 
-.intro-sec .img-block {
+.img-block {
+    display: flex;
     max-width: 500px;
     max-height: 500px;
 }
@@ -308,10 +310,7 @@ a:hover:not(nav a) {
     }
 
     .img-block {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px auto;
+        margin: 13px auto;
         width: 50%;
     }
 
@@ -323,7 +322,4 @@ a:hover:not(nav a) {
         padding: 13px 13px;
     }
 
-    body {
-        background-size: contain;
-    }
 }
