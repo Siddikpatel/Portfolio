@@ -9,6 +9,8 @@
     --primary: #00a6a6;
     --secondary: #ffd700;
     --primary-light: #d6ffff;
+    touch-action: pan-x pan-y;
+    height: 100%
 }
 
 body {
