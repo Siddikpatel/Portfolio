@@ -93,15 +93,6 @@ nav li a:hover {
     display: none;
 }
 
-@media(max-width: 800px) {
-    .hideonmobile {
-        display: none;
-    }
-    .menu-btn {
-        display: inline-block;
-    }
-}
-
 .wrapper {
     display: flex;
     align-items: center;
@@ -114,7 +105,7 @@ nav li a:hover {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 80px;
 }
 
 .animate span {
@@ -128,15 +119,19 @@ h1 {
 
 .title {
     margin: 0 auto;
-    width: 29rem;
-    height: 4rem;
+    width: 60%;
+    height: 10%;
+    /* width: 29rem;
+    height: 4rem; */
     text-align: center;
     border: 3px solid var(--primary);
     border-radius: 10rem;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 48px;
+    /* font-size: 3rem; */
     text-transform: uppercase;
     font-style: italic;
+    display: flow-root;
 }
 
 .project-box {
@@ -281,4 +276,45 @@ a:hover:not(nav a) {
     background-color: var(--primary-light);
     box-shadow: 0 2px 30px #9cffff; 
     font-weight: 500;
+}
+
+@media(max-width: 800px) {
+    .hideonmobile {
+        display: none;
+    }
+    .menu-btn {
+        display: inline-block;
+    }
+
+    nav {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .static-txt, .dynamic-txt {
+        font-size: 10.5px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .intro-sec .img-block~p {
+        font-size: 15px;
+    }
+
+    .img-block {
+        width: 200px;
+    }
+
+    .left {
+        clear: both;
+    }
+
+    .intro-sec {
+        padding: 13px 13px;
+    }
 }
