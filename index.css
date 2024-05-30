@@ -26,6 +26,7 @@ body {
 }
 
 nav {
+    right: 0;
     width: 100vw;
     list-style-type: none;
     padding: 1rem 1rem;
@@ -80,17 +81,12 @@ nav li a:hover {
     /* width: 100%; */
 }
 
-/* .menubar li:last-child {
-    margin-left: 0;
-} */
-
 .sidebar li:first-child {
     margin-right: auto;
 }
 
 .sidebar a {
     text-decoration: none;
-    /* width: 100%; */
 }
 
 .menu-btn {
@@ -321,6 +317,10 @@ a:hover:not(nav a) {
 
     .clear {
         clear: both;
+    }
+
+    .project-box .container {
+        gap: 30px;
     }
 
 }
