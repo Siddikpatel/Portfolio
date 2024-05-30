@@ -22,6 +22,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 nav {
@@ -142,6 +143,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    /* width: 80vw; */
 }
 
 .project-box .container {
@@ -157,8 +159,8 @@ h1 {
 }
 
 .frame {
-    width: 1000px;
-    height: 500px;
+    width: 60vw;
+    height: 70vh;
     overflow: hidden;
     box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.5);
 }
