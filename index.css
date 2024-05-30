@@ -189,7 +189,6 @@ h1 {
 .intro-sec {
     background-color: var(--primary-light);
     border: 1px solid var(--secondary);
-    padding: 1rem;
     margin: 3rem auto;
     width: 80%;
     height: fit-content;
@@ -202,20 +201,21 @@ h1 {
     display: flex;
     max-width: 500px;
     max-height: 500px;
+    margin: 13px 13px;
 }
 
 .left {
     float: left;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
-.intro-sec .img-block~p {
+.img-block~p {
     line-height: 1.5rem;
     font-size: 1.1rem;
     font-weight: 500;
     color: #333;
     text-align: justify;
-    margin-top: 1rem;
+    margin: 16px 16px 0;
 }
 
 .intro-sec a, .credits a {
@@ -305,21 +305,17 @@ a:hover:not(nav a) {
         font-size: 20px;
     }
 
-    .intro-sec .img-block~p {
+    .img-block~p {
         font-size: 15px;
     }
 
     .img-block {
-        margin: 13px auto;
+        margin: 13px 13px 13px 13px;
         width: 50%;
     }
 
-    .left {
+    .clear {
         clear: both;
-    }
-
-    .intro-sec {
-        padding: 13px 13px;
     }
 
 }
