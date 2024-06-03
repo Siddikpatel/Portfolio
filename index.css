@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,10 @@
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     /* background-color: whitesmoke;  */
@@ -21,7 +26,6 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -31,7 +35,7 @@ nav {
     justify-content: space-between;
     /* align-items: center; */
     padding: 1rem 1rem;
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     font-weight: 700;
     border-bottom: 0.1px solid rgb(231, 237, 241);
     box-shadow: 0 4px 35px 25px rgba(162, 222, 222, 0.6) inset;
@@ -40,22 +44,18 @@ nav {
     background-color: transparent; 
 }
 
-nav .logo {
+nav .logo-txt {
     text-shadow: 1px 1px #333;
-    display: flex;
-    justify-content: left;
-    /* align-items: center; */
     margin-left: 17px;
-    font-size: 25px;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     display: flex;
     /* align-items: end; */
-    /* justify-content: right; */
+    /* justify-content: left; */
     /* align-items: center; */
 }
 
@@ -63,45 +63,18 @@ nav li {
     margin-inline: 1rem;
 } 
 
-/* nav {
-    right: 0;
-    width: 100vw;
-    list-style-type: none;
-    padding: 1rem 1rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-align: right;
-    border-bottom: 0.1px solid rgb(231, 237, 241);
-    box-shadow: 0 2px 50px 0 rgba(0,0,0,.1);
-}
-
-nav .logo {
-    font-size: 1.1rem;
-    text-shadow: 1px 1px #333;
-    display: block;
-    text-align: left;
-}
-
-nav li {
-    display: inline-block;
-    margin-inline: 1rem;
-} */
-
 nav li a {
     text-decoration: none;
     color: black;
     padding: 0.4rem;
 }
 
-nav li a, .animate span {
+nav li a:hover, .animate span {
+    color: var(--primary);
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-color: var(--secondary);
     text-decoration-thickness: 3px;
-}
-
-nav li a:hover {
-    color: var(--primary);
 }
 
 .sidebar {
