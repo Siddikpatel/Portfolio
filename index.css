@@ -9,7 +9,7 @@
 :root {
     --primary: #00a6a6;
     --secondary: #ffd700;
-    --primary-light: #d6ffff;
+    --primary-light: rgba(162, 222, 222, 0.6);
     touch-action: pan-x pan-y;
     height: 100%;
 }
@@ -38,7 +38,7 @@ nav {
     font-size: 1.12rem;
     font-weight: 700;
     border-bottom: 0.1px solid rgb(231, 237, 241);
-    box-shadow: 0 4px 35px 25px rgba(162, 222, 222, 0.6) inset;
+    box-shadow: 0 4px 35px 25px var(--primary-light) inset;
     /* box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.1) inset; */
     width: 100vw;
     background-color: transparent; 
@@ -298,7 +298,8 @@ a:hover:not(nav a) {
     text-align: center;
     padding: 0.2rem 0;
     background-color: var(--primary-light);
-    box-shadow: 0 2px 30px #9cffff; 
+    box-shadow: 0 4px 12px 12px rgb(193, 230, 230); 
+    /* box-shadow: 0 2px 30px #9cffff;  */
     font-weight: 500;
 }
 
