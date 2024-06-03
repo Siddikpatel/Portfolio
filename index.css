@@ -304,7 +304,7 @@ a:hover:not(nav a) {
 
 .container-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly; 
     align-items: center;
     margin: 3rem auto;
     width: 80vw;
@@ -322,7 +322,7 @@ a:hover:not(nav a) {
     align-items: flex-start;
     flex-direction: column;
     flex-shrink: 0;
-    margin: 0 30px;
+    margin: auto 30px;
     box-shadow: 4px 4px 16px grey;
 }
 
@@ -348,11 +348,6 @@ a:hover:not(nav a) {
     padding-top: 15px;
     border-top: 1px solid var(--primary);
 }
-
-.card a {
-    text-decoration: none;
-}
-
 /* .no-scroll {
     overflow: hidden;
 } */
