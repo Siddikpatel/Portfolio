@@ -249,28 +249,15 @@ a:hover:not(nav a) {
     text-shadow: 2px 2px rgba(0,0,0,0.1);
 }
 
-.contact-card {
-    margin: 3rem 3.5rem 0;
-    height: fit-content;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    /* border: 2px solid #d6ffff;
-    background-color: rgb(251, 244, 201);
-    color: #00a6a6; */
-}
-
 .ca-main {
+    margin: 3rem 3.5rem 3rem;
+    height: fit-content;
     display: flex;
-    align-items: baseline;
+    /* align-items: center; */
     justify-content: center;
     font-weight: 500;
     /* margin-top: auto; */
     flex-wrap: wrap;
-}
-
-.ca-main-item {
-    display: flex;
-    margin: 1rem 3rem;
 }
 
 .dotted-circle {
@@ -281,9 +268,10 @@ a:hover:not(nav a) {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 3rem;
 }
 
-.ca-main-item:nth-child(even) {
+.dotted-circle:nth-child(even) {
     border: 4px dotted var(--secondary);
 }
 
@@ -400,10 +388,6 @@ a:hover:not(nav a) {
         height: 40px;
     }
 
-    .ca-main-item {
-        margin: 5px 5px;
-    }
-
     .ca-img {
         width: 35px;
         height: 35px;
@@ -412,10 +396,11 @@ a:hover:not(nav a) {
     .dotted-circle {
         width: 100px;
         height: 100px;
+        margin: 5px 5px;
         border: 2px dotted var(--primary);
     }
 
-    .ca-main-item:nth-child(even) {
+    .dotted-circle:nth-child(even) {
         border: 2px dotted var(--secondary);
     }
 
@@ -428,7 +413,6 @@ a:hover:not(nav a) {
         overflow-y: scroll;
         flex-direction: column;
         align-items: center;
-        /* margin-left: 30px; */
     }
 
     .card {
