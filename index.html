@@ -135,13 +135,18 @@
     <script>
 
         const sidebar = document.querySelector(".sidebar");
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
 
         function showSidebar() {
+            sidebar.style.animation = "slide 0.4s";
             sidebar.style.display = "flex";
             document.body.style.overflowY = "hidden";
         }
 
-        function hideSidebar() {
+        const hideSidebar = async () => {
+            sidebar.style.animation = "slide-rev 0.4s";
+            await delay(400);
             sidebar.style.display = "none";
             document.body.style.overflowY = "scroll";
         }
