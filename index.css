@@ -329,9 +329,18 @@ a:hover:not(nav a) {
         font-size: 15px;
     }
 
+    .intro-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .img-block {
-        margin: 13px 13px 13px 13px;
-        width: 50%;
+        align-self: center;
+        clip-path: none;
+        shape-outside: none;
+        margin: 13px 13px 0;
+        width: 90%;
     }
 
     .clear {
