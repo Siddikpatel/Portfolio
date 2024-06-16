@@ -335,7 +335,7 @@ a:hover:not(nav a) {
     }
 
     100% {
-        transform: translateX(-80vw) rotate(1080deg);
+        transform: translateX(-80vw) rotate(-900deg);
     }
 }
 
