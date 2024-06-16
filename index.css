@@ -280,7 +280,7 @@ a:hover:not(nav a) {
     flex-direction: column;
     flex-shrink: 0;
     margin: auto 30px;
-    box-shadow: 4px 4px 16px grey;
+    box-shadow: 0 0 13px grey;
 }
 
 .card a {
